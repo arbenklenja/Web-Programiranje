@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewsport" content="width=device-width,initial-scale=1">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Vezbi br.1</title>
+        <style>
+            .crveno{color:red;}
+        </style>
+        <style type="text/css">
+            .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
+            .tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+            .tftable tr {background-color:#ffffff;}
+            .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
+           table,td,th{
+               text-align: center;
+           }
+           img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;}
+        .desno{
+            float:left;width:30%;box-sizing:border-box;
+        }
+            </style>
+         </head>
+        <body>
+             <!--Zadaca 1 i 2 -->
+        <button type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-repeat"></span> Repeat</button>
+        <button type="button" class="btn btn-info"> 
+            <span class="glyphicon glyphicon-envelope"></span> View message</button>
+       
+     <!--Zadaca 3 -->
+     <br>
+     <br>
+     <br>
+     <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="80"
+        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+          80% Complete
+        </div>
+      </div>
+      <!-- Zadaca 4-->
+      <table class="tftable" border="1">
+        <tr>
+            <td colspan="2">Месеци и часови</td>
+            <td>Денови</td>
+            <td>Име</td>
+            <td>Презиме</td></tr>
+        <tr style="background-color:#00aeff">
+            <td>Април</td>
+            <td>100</td>
+            <td>2</td>
+            <td>Стефан</td>
+            <td>Стефановски</td></tr>
+        <tr>
+            <td>Мај</td>
+            <td>45</td>
+            <td>1</td>
+            <td>Петко</td>
+            <td>Петкоски</td></tr>
+        <tr>
+            <td>Јули</td>
+            <td>120</td>
+            <td>4</td>
+            <td colspan="2">Нема информација</td></tr>
+        </table>
+
+      <!-- Zadaca 5-->
+        <img type="image" src="Capture.PNG" alt="Submit" >
+
+    <!--Zadaca 6-->
+    <form class="generated-form"  method="GET" action="submit.php"  target="_self"
+    action="mailto:movies@gmail.com"
+    method="POST"
+    enctype="multipart/form-data"
+    name="EmailForm">
+        <fieldset>
+          <legend> Movies </legend>
+           <label for="text">Movie title</label><br>
+           <input type="text" id="text" name="text"><br>
+           <label for="cars">Genre</label><br>
+           <select id="cars">
+              <option value="volvo">Romantic</option>
+              <option value="saab">Action</option>
+              <option value="mercedes">Fantasy</option>
+              <option value="audi">Drama</option>
+           </select> <br><br>
+           <label for="text">Director</label><br>
+           <input type="text" id="text" name="text"><br>
+           <label for="text">Writer</label><br>
+           <input type="text" id="text" name="text"><br>
+           <label for="text">Producer</label><br>
+           <input type="text" id="text" name="text"><br>
+           <label for="url">Website</label><br>
+           <input type="url" id="url" name="url"><br>
+           <label for="url">Youtube trailer URL</label><br>
+           <input type="url" id="url" name="url"><br>
+           <label for="text">Review</label><br>
+           <input type="text" id="text" name="text"><br>
+        </fieldset>
+        <button type="submit" value="Submit">Send</button>
+        </form>
+    </body>
+</html>
